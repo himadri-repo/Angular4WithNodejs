@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# Salon
+# POC
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
 
@@ -26,10 +25,9 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-=======
+
 # Angular4 With Nodejs
 
-## This application is a POC on Angular 4 with Node.js as API layer.
-## This application also use translation service which will translate english/french etc or any other language we want.
-## 
->>>>>>> a25ab73eb2b6c990116e7993bbc89967b9c754eb
+This application is a POC on Angular 4 with Node.js as API layer.
+This application also use translation service which will translate english/french etc or any other language we want.
+ 
