@@ -1,0 +1,52 @@
+.topbararea {
+    width: 100%;
+    padding: 0 15px;
+    background-color: #86cd65;
+    float:left;
+}
+
+.topbarleft {
+    /*float: right;*/
+    text-align: right;
+    color: #FFF;
+    padding: 7px 0 7px 0;
+}
+
+.topbarright {
+    float: right;
+    text-align: right;
+    color: #FFF;
+    padding: 7px 0 7px 0;
+}
+.email {
+    color:#ffffff;
+}
+a {
+    color: #ffffff;
+}
+.signup {
+    margin-right: 15px;
+}
+.logo {
+    float: left;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+.logo h2 {
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+.logo h2 a {
+    font-family: 'Lobster';
+    font-size: 34px;
+    font-weight: normal;
+    text-decoration: none;
+}
+.logo p {
+    color: #f2f2f2;
+    text-align: right;
+    font-weight: 400;
+}
+/*.login {
+}*/

@@ -1,0 +1,87 @@
+.headspace {
+    padding-top:100px;
+}
+
+@media only screen and (max-width: 600px) {
+    .card {
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .card {
+        width: 50%;
+    }    
+}
+@media only screen and (min-width: 992px) {
+    .card {
+        width: 50%;
+    }    
+    .username, .password{
+        width: 450px;
+    }    
+}
+
+form {border: 3px solid #f2f2f2;}
+
+input[type=text], input[type=password] {
+    /*width: 100%;*/
+    padding: 6px 10px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 10px;
+    margin: 8px 8px;
+    border: none;
+    cursor: pointer;
+    /*width: 100%;*/
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 30%;
+    border-radius: 40%;
+}
+
+.formcontainer {
+    padding: 8px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+.loginFooter {
+    background-color:#f1f1f1;
+    width: 100%;
+}

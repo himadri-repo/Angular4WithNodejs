@@ -1,0 +1,42 @@
+<!-- Below is menu section -->
+<div class="slideimage">
+</div>
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container-fluid menusection">
+    <div class="row no-margin">
+    <div class="col-sm-6"></div>
+    <div class="col-sm-6">
+        <!-- Put Navbar here -->
+        <nav class="navbar">
+        <div class="container-fluid">
+            <!--<div class="navbar-header">
+            <a class="navbar-brand" href="#">WebSiteName</a>
+            </div>-->
+            <ul class="nav navbar-nav">
+            <li *ngFor="let node of menus" [ngClass]="getClass(node)">
+                <a href="#{{node.menuLink}}" *ngIf="node.childMenus.length==0 && hasPermission(node)">{{node.menuName}}</a>
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" 
+                *ngIf="node.childMenus.length>0 && hasPermission(node)">{{node.menuName}} <span class="caret"></span></a>
+                <ul class="dropdown-menu" *ngIf="node.childMenus.length>0 && hasPermission(node)">
+                    <li *ngFor="let childNode of node.childMenus">
+                    <a href="#{{childNode.menuLink}}">{{childNode.menuName}}</a>
+                    </li>
+                </ul>
+            </li>
+            <!-- <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Page 1-1</a></li>
+                    <li><a href="#">Page 1-2</a></li>
+                    <li><a href="#">Page 1-3</a></li>
+                </ul>
+            </li> -->
+            <!--<li><a href="#">Page 2</a></li>
+            <li><a href="#">Page 3</a></li>-->
+            </ul>
+        </div>
+        </nav>
+    </div>
+    </div>
+</div>

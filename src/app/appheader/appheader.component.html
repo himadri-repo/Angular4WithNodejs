@@ -1,0 +1,22 @@
+<div class="topbararea">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="logo">
+                    <h2><a [routerLink]="['/']">Rosaleen</a></h2>
+                    <p>Discover the beauty within</p>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="topbarleft">Contact: {{phonenumber}} | 
+                    <a href="mailto:{{email}}" title="Email to {{email}}" class="email">{{email}}</a>
+                </div> <!-- ./topbarleft : phone | email -->
+                <div class="topbarright">
+                    <a [routerLink]="['/signup']" class="signup" *ngIf="!authenticated"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+                    <a class="login" href="#" (click)="authOperation()"><span class="glyphicon glyphicon-log-in"></span> {{AuthLabel}}</a>
+                    <!--<a [routerLink]="['/login']" class="login"><span class="glyphicon glyphicon-log-in"></span> Login</a> -->
+                </div> <!-- ./topbarright : signup | login -->
+            </div>
+        </div>
+    </div>
+</div>

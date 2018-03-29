@@ -1,0 +1,33 @@
+.menusection {
+    padding: 0 !important;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+}
+.nav>li>a {
+    color: #ffffff;
+    text-shadow: 0 0px 0 rgba(255,255,255,0);
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    color: #ffffff;
+    background: transparent;
+    text-shadow: 0 0px 0 rgba(255,255,255,0);
+    outline: 0px;
+    outline-offset: 0px;
+    text-decoration: none;
+}
+.slideimage {
+    background-image: url('../../assets/images/slider1.jpg');
+    width: 100%;
+    height: 250px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.no-margin {
+    margin-left:0px;
+    margin-right:0px;
+}
+
+.dropdown-toggle a:link, .dropdown-toggle a:visited {
+    color:#ffffff;
+}

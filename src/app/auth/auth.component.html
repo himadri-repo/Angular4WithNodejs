@@ -1,0 +1,38 @@
+<div class="headcontainer">
+    <app-header></app-header>
+</div>
+<!--component html goes here -->
+<div class="container headspace card">
+    <div class="panel panel-primary">
+        <div class="panel-heading"><h3>Login</h3></div>
+        <div class="panel-body">
+            <div class="container-fluid">
+                <div class="row">
+                    <form action="/action_page.php">
+                        <div class="imgcontainer">
+                            <img src="/assets/images/img_avatar2.png" alt="Avatar" class="avatar">
+                        </div>
+                        
+                        <div class="formcontainer">
+                            <label for="uname"><b>Username</b></label>
+                            <input type="text" placeholder="Enter Username" name="uname" required class="username">
+                        
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required class="password">
+                                
+                            <button type="submit">Login</button>
+                            <label>
+                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                            </label>
+                        </div>
+                        
+                        <div class="container loginFooter">
+                            <button type="button" class="cancelbtn" (click)="fnCancel(e)">Cancel</button>
+                            <span class="psw">Forgot <a href="#">password?</a></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
