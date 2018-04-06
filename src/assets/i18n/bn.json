@@ -1,0 +1,16 @@
+{
+    "title": "অনুবাদ উদাহরণ",
+    "intro": "নমস্কার আমি {{name}}, আমার বয়স {{age}} বছর",
+    "Startpage": {
+        "TranslationSections": "নমস্কার সবাইকে"
+    },
+    "Aboutpage": {
+        "TranslationSections": "আমরা MeritTree বলছি"
+    },
+    "Language": {
+        "title": "ভাষা পরিবর্তন করুন",
+        "en": "ইংরেজি",
+        "hi": "হিন্দি",
+        "bn": "বাংলা"
+    }
+}

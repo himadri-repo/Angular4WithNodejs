@@ -1,0 +1,16 @@
+{
+    "title": "अनुवाद का उदाहरण",
+    "intro": "नमस्कार मैं हूँ {{name}}, मेरी उम्र {{age}}  साल है",
+    "Startpage": {
+        "TranslationSections": "नमस्ते दुनिया"
+    },
+    "Aboutpage": {
+        "TranslationSections": "हम MeritTree हैं"
+    },
+    "Language": {
+        "title": "भाषा बदलो",
+        "en": "अंग्रेज़ी",
+        "hi": "हिंदी",
+        "bn": "बंगाली"
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "title": "Translation example",
+    "intro": "Hello I am {{name}}, I am {{age}} years old.",
+    "Startpage": {
+        "TranslationSections": "Hello World"
+    },
+    "Aboutpage": {
+        "TranslationSections": "We are letsboot"
+    },
+    "Language": {
+        "title": "Change language",
+        "en": "English",
+        "hi": "Hindi",
+        "bn": "Bengali"
+    }
+}

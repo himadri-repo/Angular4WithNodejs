@@ -1,7 +1,7 @@
 <div class="topbararea">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-4">
+            <div class="col-sm-2">
                 <div class="logo">
                     <h2><a [routerLink]="['/']">Rosaleen</a></h2>
                     <p>Discover the beauty within</p>
@@ -16,6 +16,18 @@
                     <a class="login" href="#" (click)="authOperation()"><span class="glyphicon glyphicon-log-in"></span> {{AuthLabel}}</a>
                     <!--<a [routerLink]="['/login']" class="login"><span class="glyphicon glyphicon-log-in"></span> Login</a> -->
                 </div> <!-- ./topbarright : signup | login -->
+            </div>
+            <div class="col-sm-2">
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" id="dropdownMenuButton" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        {{ 'Language.title' | translate }} <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#" (click)="switchLanguage('en')">{{ 'Language.en' | translate }}</a></li>
+                        <li><a class="dropdown-item" href="#" (click)="switchLanguage('hi')">{{ 'Language.hi' | translate }}</a></li>
+                        <li><a class="dropdown-item" href="#" (click)="switchLanguage('bn')">{{ 'Language.bn' | translate }}</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

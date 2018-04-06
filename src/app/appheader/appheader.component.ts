@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { MenusectionComponent } from '../menusection/menusection.component';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
     moduleId: module.id,
@@ -12,8 +13,12 @@ export class AppheaderComponent {
     phonenumber: String = '+919874550200';
     email: String = 'contact.rosaleen@gmail.com';
 
-    public constructor(public menusection: MenusectionComponent) {
+    user = {
+        name: 'Himadri',
+        age: 43
+    };
 
+    public constructor(public menusection: MenusectionComponent, public translate: TranslateService) {
     }
 
     loginWithGoogle() {
@@ -42,5 +47,9 @@ export class AppheaderComponent {
         } else {
             return 'Login';
         }
+    }
+
+    switchLanguage(language: string) {
+        this.translate.use(language);
     }
 }

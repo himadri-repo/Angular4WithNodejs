@@ -14,7 +14,9 @@ import { SignupComponent } from './auth/signup.component';
 
 /*Service imports*/
 import { MetadataService } from './services/metadata.service';
-// import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpModule } from '@angular/http';
 import { environment } from '../environments/environment';
 import { AuthService } from './services/auth.service';
@@ -37,9 +39,21 @@ const appRoutes: Routes = [
     HttpModule,
     AngularFireModule.initializeApp(environment.firebase, 'salon'),
     AngularFireDatabaseModule,
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    })
   ],
   providers: [MetadataService, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
