@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 import { MenusectionComponent } from '../menusection/menusection.component';
 import { TranslateService } from '@ngx-translate/core';
 
@@ -9,9 +9,11 @@ import { TranslateService } from '@ngx-translate/core';
     styleUrls: ['appheader.component.css'],
     providers: [MenusectionComponent]
 })
-export class AppheaderComponent {
+export class AppheaderComponent implements OnInit {
     phonenumber: String = '+919874550200';
     email: String = 'contact.rosaleen@gmail.com';
+
+    @Output() childReadyEvent: EventEmitter<string> = new EventEmitter(true);
 
     user = {
         name: 'Himadri',
@@ -19,6 +21,12 @@ export class AppheaderComponent {
     };
 
     public constructor(public menusection: MenusectionComponent, public translate: TranslateService) {
+    }
+
+    ngOnInit(): void {
+        // throw new Error('Method not implemented.');
+        console.log('child model created');
+        this.childReadyEvent.emit('Child component got created.');
     }
 
     loginWithGoogle() {
